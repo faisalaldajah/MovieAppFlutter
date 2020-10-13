@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'MovieDataBase.dart';
 import 'package:biz_card/new movie/MoviePage.dart';
+import 'MoviePageDataBese.dart';
 
 final List<MovieDataBase> movieDataBase = MovieDataBase.getMovieDataBase();
 
@@ -74,7 +75,7 @@ class _PageDesignState extends State<PageDesign>
             child: TabBarView(
               controller: _tabController,
               children: [
-                MoviePage(),
+                MoviePageDataBase(),
                 MoviePage(),
                 MoviePage(),
                 MoviePage(),
