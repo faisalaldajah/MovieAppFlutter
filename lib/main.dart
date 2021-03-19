@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'MovieDataList.dart';
 import 'MovieListViewDetaisl.dart';
 import 'package:biz_card/new movie/Movie_app.dart';
-import 'Movie2/MovieAppDatabase.dart';
+//import 'Movie2/MovieAppDatabase.dart';
 
 void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      home: MovieAppDataBase(),
+      home: MovieApp(),
     ),
   );
 }
@@ -19,17 +19,6 @@ var ktextcolor = TextStyle(
 );
 
 class MyApp extends StatelessWidget {
-  final List movies = [
-    "Titanic",
-    "BLade Runner",
-    "Blade",
-    "Matrix",
-    "Lord of the Rings",
-    "Avatar",
-    "Rambo",
-    "300",
-  ];
-
   final List<MoviesDataList> movieList = MoviesDataList.getMoviesDataList();
 
   @override
